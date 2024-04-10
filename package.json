@@ -1,0 +1,22 @@
+{
+  "name": "frontend-js-template-1",
+  "version": "1.0.0",
+  "description": "frontend js template",
+  "scripts": {
+    "build": "webpack",
+    "webpack_dev": "webpack serve"
+  },
+  "keywords": [
+    "frontend",
+    "js",
+    "template"
+  ],
+  "author": "Thorsten Franz Brune",
+  "license": "ISC",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}

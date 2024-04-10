@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JS-demo">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Demo">
+    <meta name="author" content="Thorsten Franz Brune">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend js template</title>
+
+    <style>
+        body,
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+            user-select: none;
+        }
+
+        /* ------------------------ */
+        header {
+            height: 5%;
+            background-color: yellow;
+        }
+
+        main {
+            height: 90%;
+            padding: 1%;
+            box-sizing: border-box;
+        }
+
+        footer {
+            height: 5%;
+            background-color: yellow;
+        }
+
+        /* ------------------------ */
+        nav,
+        footer {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        /* ------------------------ */
+
+        nav {
+            height: 100%;
+        }
+
+        #navLeft,
+        #navMiddle,
+        #navRight {
+            display: flex;
+        }
+
+        #navLeft {
+            width: 60%;
+        }
+
+        #navMiddle,
+        #navRight {
+            width: 20%;
+            justify-content: center;
+            justify-content: flex-end;
+        }
+
+        #navRight {
+            margin-right: 1vw;
+        }
+
+        .navLink {
+            margin-left: 1vw;
+        }
+
+        footer {
+            justify-content: space-between;
+        }
+
+        #footerLeft {
+            width: 30%;
+        }
+
+        #footerLeft_p {
+            margin-left: 1vw;
+        }
+
+        #footerRight {
+            width: 25%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #footerRight_p {
+            padding-right: 1vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div id="navLeft">
+                <p data-href="/" class="navLink">Dashboard</p>
+                <p data-href="/posts" class="navLink">Posts</p>
+                <p data-href="/shop" class="navLink">Shop</p>
+                <p data-href="/about" class="navLink">About</p>
+                <p data-href="/setting/33" class="navLink">Invalide route
+                    example</p>
+                <p data-href="/posts/33" class="navLink">Params example</p>
+            </div>
+            <div id="navMiddle">
+                <p id="navUser" class="navLink">field: user-name</p>
+            </div>
+            <div id="navRight">
+                <p id="navAuth">Login / Register</p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="app"></div>
+    </main>
+
+    <footer>
+        <div id="footerLeft">
+            <p id="footerLeft_p">some footer content</p>
+        </div>
+        <div id="footerRight">
+            <p id="footerRight_p">some more footer content</p>
+        </div>
+    </footer>
+</body>
+
+</html>
